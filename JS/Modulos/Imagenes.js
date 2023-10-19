@@ -1,5 +1,5 @@
 export async function Imagenes() {
-    let respuesta = await fetch("../JS/imagenes.json");
+    let respuesta = await fetch("../../JS/imagenes.json");
     let images = await respuesta.json();
 
     let imagen1 = document.querySelector("#Imagen1");
