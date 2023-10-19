@@ -1,37 +1,324 @@
  <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arquitecturas RISC y CISC</title>
-    <link rel="icon" href="img/LogoCuadrado.png" />
+    <link rel="icon" href="img/yo.jpg" />
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
    <header>
-        <div class="back">
-            <div class="menu container">
-                <a href="#" class="logo">
-                    <img src="img/LogoCuadrado.png" alt="imagen de la empresa">
-                </a>
-                <input type="checkbox" id="menu">
-                <label for="menu">
-                    <img src="img/menu.png" class="menu-icon" alt="icono de menu">
-                </label>
+         <div class="container">
+             <h3>
+                 Jonathan Joel Montesinos Pacheco
+             </h3>
+            <h1>
+                Arquitecturas RISC y CISC
+            </h1>
+            <main>
                 <nav class="navbar">
-                    <ul>
-                        <li><a href="#">Que es CISC</a></li>
-                        <li><a href="#">Caracteristicas de CISC</a></li>
-                        <li><a href="#">Que es RISC</a></li>
-                        <li><a href="#">Caracteristicas de RISC</a></li>
-                        <li><a href="#">Diferencias</a></li>
-                    </ul>
+                    <ol>
+                        <li><a href="#Que-es-CISC">Que es CISC</a></li>
+                        <li><a href="#Caracteristicas-CISC">Caracteristicas de CISC</a></li>
+                        <li><a href="#Que-es-RISC">Que es RISC</a></li>
+                        <li><a href="#Caracteristicas-RISC">Caracteristicas de RISC</a></li>
+                        <li><a href="#Diferencias">Diferencias</a></li>
+                    </ol>
                 </nav>
-            </div>
-            <div>
-                <h1 class="text-center">Arquitecturas RISC y CISC</h1>
-            </div>
         </div>
    </header>
+   <main>
+    <button id="dark-theme">
+        Dark Theme
+    </button>
+    <h2 class="text-center" id="Que-es-CISC">
+        Que es CISC
+    </h2>
+    <p>
+        Es una gran colección de instrucciones que van desde simples a muy complejas y especializadas a nivel de lenguaje de ensamblador. 
+        CISC es un sistema de instrucciones desarrollado por Intel que requieren de mucho tiempo para ser ejecutadas completamente.
+        Lo que sucede en CISC es que se reduce la cantidad de instrucciones de un software y se ignora el número de ciclos por instrucción. 
+        Se especializa en crear instrucciones complejas en el hardware, ya que el hardware siempre será mucho más rápido que el software.
+        Este tipo de diseño es la base de los procesadores de Intel y de AMD, sin importar la gama o la estructura interna. 
+        Cualquiera de los procesadores producidos por ambas compañías se basan en la arquitectura CISC.
+    </p>
+    <h2 class="text-center" id="Caracteristicas-CISC">
+        Caracteristicas de CISC
+    </h2>
+    <ul>
+        <li>
+            El tamaño del código es pequeño, lo que implica una baja necesidad de memoria RAM
+        </li>
+        <li>
+            Las instrucciones complejas suelen necesitar más de un ciclo de reloj para ejecutar el código
+        </li>
+        <li>
+            Se requieren menos instrucciones para escribir un software
+        </li>
+        <li>
+            Ofrece programación más sencilla en lenguaje ensamblador
+        </li>
+        <li>
+
+        </li>
+        <li>
+            Soporte para una estructura de datos compleja y fácil de compilar en lenguajes de alto nivel
+        </li>
+        <li>
+            Compuesto por menos registros y más nodos de direccionamiento, habitualmente entre 5 y 20
+        </li>
+        <li>
+            Instrucciones pueden ser más grandes que una sola palabra
+        </li>
+        <li>
+            Se enfatiza la construcción de instrucciones en el hardware, ya que es más rápido que crear el software
+        </li>
+    </ul>
+    <h3>
+        Ventajas de los procesadores CISC
+    </h3>
+    <ul>
+        <li>
+            Para el compilador se requiere de poco esfuerzo para traducir programas de alto nivel o lenguajes de instrucciones a lenguaje ensamblador o máquina
+        </li>
+        <li>
+            El tamaño del código es corto, reduciendo los requisitos de memoria
+        </li>
+        <li>
+            Almacenar las instrucciones CISC requieren de menos cantidad de memoria RAM
+        </li>
+        <li>
+            Genera procesos de administración de uso de energía que permiten ajustar la velocidad y el voltaje del reloj
+        </li>
+        <li>
+            Requiere de menos instrucciones configuradas para realizar la misma instrucción que la arquitectura RISC
+        </li>
+    </ul>
+    <h3>
+        Desventajas de los procesadores CISC
+    </h3>
+    <ul>
+        <li>
+            Pueden requerir de varios ciclos de reloj para completar una instrucción de un software
+        </li>
+        <li>
+            El rendimiento del equipo sufre un descenso debido a la velocidad del reloj
+        </li>
+        <li>
+            La ejecución mediante canalización en procesadores CISC puede ser realmente complicado
+        </li>
+        <li>
+            Este diseño de procesadores requiere muchos más transistores que la arquitectura RISC
+        </li>
+        <li>
+            Utilizan sobre el 20% de las instrucciones existentes en un evento de programación
+        </li>
+        <li>
+            Tienen un diseño mucho mayor que la arquitectura RISC, lo cual conlleva más generación de temperatura, mayor consumo y mayor requisito de espacio físico
+        </li>
+    </ul>
+    <h2 class="text-center" id="Que-es-RISC">
+        Que es RISC
+    </h2>
+    <p>
+        Es una arquitectura de procesadores basada en una colección de instrucciones simples y altamente personalizadas. 
+        RISC se construye para minimizar el tiempo de ejecución de una instrucción, optimizando y limitando el número de instrucciones.
+    </p>
+    <p>
+        La arquitectura RISC tiene la capacidad de por cada ciclo de instrucción se da solo un ciclo de reloj. Cada ciclo debe contener estos tres parámetros: buscar, decodificar y ejecutar. RISC también tiene la propiedad de ejecutar varias instrucciones complejas cuando se combinan con otras más simples. 
+        Este diseño de procesadores requiere menor cantidad de transistores, reduciendo costes y tiempos de fabricación.
+    </p>
+    <p>
+        Todos los procesadores basados en los diseños de ARM, como por ejemplo los Qualcomm Snapdragon y los Samsung Exynos se basan en la arquitectura RISC. 
+        Incluso los procesadores integrados en las Raspberry Pi son de arquitectura RISC, al basarse en procesadores Broadcom que hace uso de licencias ARM.
+    </p>
+    <h2 class="text-center" id="Caracteristicas-RISC">
+        Caracteristicas de RISC
+    </h2>
+    <ul>
+        <li>Para ejecutar una instrucción en estos procesadores, en un procesador de este tipo se requiere un ciclo de reloj. 
+        <br>Cada ciclo de reloj incluye un método de obtención, decodificación y ejecución de la instrucción
+        </li>
+        <li>
+            La técnica de canalización se usa en esta arquitectura para ejecutar múltiples partes o etapas de instrucciones para obtener un funcionamiento más eficiente
+        </li>
+        <li>
+            Estos procesadores están optimizados basándose en múltiples registros que se pueden usar para el almacenamiento de instrucciones y 
+            la respuesta rápida del procesador y se minimicen las interacciones con la memoria del sistema
+        </li>
+        <li>
+            Soporta un modo de direccionamiento simple y que tiene una longitud de instrucción fija para la ejecución de la canalización
+        </li>
+        <li>
+            Usan instrucciones LOAD y STORE para acceder a la memoria
+        </li>
+        <li>
+            Las instrucciones simples y limitadas permiten reducir los tiempos de ejecución de un proceso
+        </li>
+    </ul>
+    <h3>
+        Ventajas de los procesadores RISC
+    </h3>
+    <ul>
+        <li>
+            Tienen la capacidad de ofrecer un mejor rendimiento gracias al menor número de instrucciones y la simplicidad de las mismas
+        </li>
+        <li>
+            Requieren de menos transistores, lo cual los hace más económicos de diseñar y producir
+        </li>
+        <li>
+            Permiten crear procesadores con «espacio» libre para añadir otros circuitos o reducir sencillamente el encapsulado
+        </li>
+        <li>
+            Este diseño requiere de menos consumo de energía y generan menos calor que los procesadores RISC
+        </li>
+    </ul>
+    <h3>
+        Desventajas de los procesadores RISC
+    </h3>
+    <ul>
+        <li>
+            El rendimiento del procesador puede variar dependiendo del código que se ejecuta, ya que las instrucciones posteriores que se ejecuten pueden depender de una instrucción anterior
+        </li>
+        <li>
+            Actualmente la mayoría de software y compiladores hacen uso de instrucciones complejas
+        </li>
+        <li>
+            Necesitan de memorias muy rápidas para almacenar diferentes cantidades de instrucciones, que requieren de una gran cantidad de memoria caché para responder a la instrucción en el menor tiempo posible
+        </li>
+    </ul>
+    <h2 class="text-center" id="Diferencias">
+        Diferencias entre RISC y CISC
+    </h2>
+    <div class="container-table">
+        <table class="alt">
+        <tbody>
+        <tr>
+        <th>
+            CISC
+        </th>
+        <th>
+            RISC
+        </th>
+        </tr>
+        <tr>
+        <td>
+            Es una arquitectura con conjunto de instrucciones reducido
+        </td>
+        <td>
+            Es una arquitectura de conjunto de instrucciones complejas
+        </td>
+        </tr>
+        <tr>
+        <td>
+            Hace hincapié en el software para optimizar el conjunto de instrucciones
+        </td>
+        <td>
+            Hace hincapié en el hardware para optimizar el conjunto de instrucciones
+        </td>
+        </tr>
+        <tr>
+        <td>
+            Es una unidad de programación cableada en el procesador
+        </td>
+        <td>
+            Unidad de microprogramación en el procesador
+        </td>
+        </tr>
+        <tr>
+        <td>
+            Requiere múltiples conjuntos de registros para almacenar la instrucción
+        </td>
+        <td>
+            Requiere un único conjunto de registros para almacenar la instrucción
+        </td>
+        </tr>
+        <tr>
+        <td>
+            Tiene una sencilla decodificación de las instrucciones
+        </td>
+        <td>
+            Tiene una compleja decodificación de las instrucciones
+        </td>
+        </tr>
+        <tr>
+        <td>
+            Los usos de la canalización son simples
+        </td>
+        <td>
+            Los usos de la canalización son difíciles
+        </td>
+        </tr>
+        <tr>
+        <td>
+            Utiliza un número limitado de instrucciones que requiere menos tiempo para ejecutar las instrucciones
+        </td>
+        <td>
+            Utiliza una gran cantidad de instrucciones que requieren más tiempo para ejecutar las instrucciones
+        </td>
+        </tr>
+        <tr>
+        <td>
+            Utiliza LOAD y STORE que son instrucciones independientes en el registro para registrar la interacción de un programa
+        </td>
+        <td>
+            Utiliza la instrucción LOAD y STORE en la interacción de memoria a memoria de un programa
+        </td>
+        </tr>
+        <tr>
+        <td>
+            Tiene más transistores en registros de memoria
+        </td>
+        <td>
+            Tiene transistores para almacenar instrucciones complejas
+        </td>
+        </tr>
+        <tr>
+        <td>
+            El tiempo de ejecución es muy corto
+        </td>
+        <td>
+            El tiempo de ejecución es mayor
+        </td>
+        </tr>
+        <tr>
+        <td>
+            Se puede utilizar con aplicaciones de gama baja como domótica, sistema de seguridad, etc.
+        </td>
+        <td>
+            Se puede utilizar con aplicaciones de alta gama como telecomunicaciones, procesamiento de imágenes, procesamiento de video, etc.
+        </td>
+        </tr>
+        <tr>
+        <td>
+            Tiene instrucciones de formato fijo
+        </td>
+        <td>
+            Tiene instrucciones de formato variable
+        </td>
+        </tr>
+        <tr>
+        <td>
+            El programa escrito para esta arquitectura necesita ocupar más espacio en la memoria
+        </td>
+        <td>
+            Los programas escritos para esta arquitectura tienden a ocupar menos espacio en la memoria
+        </td>
+        </tr>
+        </tbody>
+        </table>
+    </div>
+   </main>
+   <footer>
+    <p>
+        Las fuente usada para este trabajo es la siguiente:
+    </p>
+    <a href="https://www.profesionalreview.com/2021/07/18/risc-vs-cisc/#Caracteristicas_de_los_procesadores_CISC">Ir al link</a>
+   </footer>
 </body>
+<script src="JS/Main.js" type="module"></script>
 </html>
