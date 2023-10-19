@@ -1,9 +1,8 @@
 {
-    "image": {
        "Imagen1": "img/Procesador-intel.jpg",
        "Imagen2": "img/soc-apple-silicon-m1 (1).jpg",
        "Imagen3": "img/RISC-Architecture (1).jpg",
        "Imagen4": "img/CISC-Architecture (1).jpg",
        "Imagen5": "img/CISC-and-RISC (1).jpg"
-    }
+    
    }
